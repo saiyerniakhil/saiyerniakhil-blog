@@ -1,5 +1,6 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
+import { StyledTitle } from "./Header.style"
 
 const TitleAndDescription = ({ data }) => {
   const title = data.site.siteMetadata.title
@@ -7,7 +8,7 @@ const TitleAndDescription = ({ data }) => {
 
   return (
     <div>
-      <h2>{title}</h2>
+      <StyledTitle>I am {title}</StyledTitle>
       <p>{description}</p>
     </div>
   )
